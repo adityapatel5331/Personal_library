@@ -46,7 +46,7 @@ then the work is complete.
 
 ## Deployment
 
-https://git.cs.dal.ca/patel29/csci2134
+https://git.cs.dal.ca/patel29/csci2170
 
 ## Sources Used
 
