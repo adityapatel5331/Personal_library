@@ -1,5 +1,4 @@
-# Lab 1
-
+# Lab 3
 
 * *Date Created*: 20 09 2023
 * *Last Modification Date*: 20 09 2023
@@ -47,7 +46,7 @@ then the work is complete.
 
 ## Deployment
 
-https://git.cs.dal.ca/patel29/csci2170
+https://git.cs.dal.ca/patel29/csci2134
 
 ## Sources Used
 
