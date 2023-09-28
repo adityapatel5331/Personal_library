@@ -46,6 +46,9 @@ https://git.cs.dal.ca/patel29/csci2170
 
 1) Apart from that, I have used different websites for sake of learning. Also some code snippets has been used for completing the assignment.
 https://www.w3schools.com/php/php_datatypes.asp
+Gabriella Mosquera
+2) The main content for the file lecture5 was taken and used from the lecture video Taught by professor Gabriella Mosquera, mosquera@cs.dal.ca. 
+https://dal.brightspace.com/d2l/le/content/283980/viewContent/3860116/View
 
 
 ### File Name
