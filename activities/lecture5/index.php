@@ -8,6 +8,7 @@
     <meta name="author" content="Author Name">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <?php include "includes/calculator.php" ?>
 </head>
 
 <body>
@@ -36,11 +37,8 @@
                     <button name="operator" value="Multiply">Multiply</button>
                     <button name="operator" value="Divide">Divide</button>
                     <button name="operator" value="Modulus">Modulus</button>
-                    <button name="operator" value="Even">Is Even or not?</button>
                     <p class="result">Result: <em>
-                            <?php echo $result;
-                            include 'calculator.php';
-                            ?>
+                            <?php echo "$result"; ?>
                         </em></p>
                 </fieldset>
             </form>
