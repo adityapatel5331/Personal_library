@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>My Website</title>
+    <title>My Bookstore</title>
     <style>
         .book-container {
             display: flex;
@@ -28,6 +28,16 @@
             max-width: 100%;
             height: auto;
         }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -35,7 +45,7 @@
     <main>
         <h1>Welcome to my Book Store Website</h1>
     </main>
-
+    <hr>
     <?php
     $books = array(
         array(
@@ -104,5 +114,9 @@
     }
     ?>
 </body>
+
+<footer>
+    <p> &copy; Aditya Patel </p>
+</footer>
 
 </html>
