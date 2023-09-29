@@ -59,11 +59,7 @@ https://dal.brightspace.com/d2l/le/content/
 3)Resources Used
  The information for all the five books can be found on the same page for each book.
  They are as following:-
- a) VINCE FLYNN: CODE RED:-  https://www.goodreads.com/book/show/109238891-code-red?from_search=true&from_srp=true&qid=0ymSlbdT7q&rank=1
- b) Holly :-                 https://www.goodreads.com/book/show/65916344-holly?from_search=true&from_srp=true&qid=RsmiYy1weL&rank=1
- c) Fourth Wing :-           https://www.goodreads.com/book/show/61431922-fourth-wing?from_search=true&from_srp=true&qid=sorqg8zwcI&rank=2
- d) 23 1/2 lies:-            https://www.goodreads.com/book/show/75593800-23-1-2-lies?ref=nav_sb_ss_1_6
- e) Things we left behinf:-  https://www.goodreads.com/book/show/116536542-things-we-left-behind?ref=nav_sb_ss_1_11
+ https://www.goodreads.com/book/show/
 
  ** All the information regarding the books can be found from the link given above this links.
  Information including 
