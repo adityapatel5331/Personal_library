@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$password = clean($_POST['password']);
 			// Use regex to enforce at least one number, one uppercase letter,
 			// one lowercase letter, and one special character
-			if (!preg_match("/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{12,0}$/", $password)) {
+			if (!preg_match("/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{12,}$/", $password)) {
 				$password = 'Invalid Password';
 			} else {
 				$password = 'Valid Password';
