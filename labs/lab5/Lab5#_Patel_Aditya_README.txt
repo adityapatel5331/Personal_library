@@ -1,8 +1,8 @@
-# Lab 2
+# Lab 5
 
 * *Date Created*: 28 09 2023
 * *Last Modification Date*: 28 09 2023
-* *Lab URL*: https://web.cs.dal.ca/~patel29/csci2170/lab2/
+* *Lab URL*: https://web.cs.dal.ca/~patel29/csci2170/lab5/
 * *Git URL*: https://git.cs.dal.ca/patel29/csci2170.git
 
 ## Authors
@@ -24,12 +24,12 @@ See the following section for detailed step-by-step instructions on how to insta
 
 ### Installing
 
-1) This is the readme file for lab 2 activity submission.
-As directed this txt file contains all the necessary documentations for Lab 2. Some contents and ideas , about the use of elements and different tags are taken from lab2 folder which was used for explanation for CSCI2170. 
+1) This is the readme file for lab 5 submission.
+As directed this txt file contains all the necessary documentations for Lab 5. Some contents and ideas , about the use of elements and different tags are taken from lab2 folder which was used for previous submission of lab2 for CSCI2170. 
 
 ## Running the tests
 
-testing can be done via visiting the website :- https://web.cs.dal.ca/~patel29/csci2170/lab2/
+testing can be done via visiting the website :- https://web.cs.dal.ca/~patel29/csci2170/lab5/
 also for verifying the work you can visit :- https://validator.w3.org/
 
 ### Break down into end to end tests
@@ -57,20 +57,20 @@ Gabriella Mosquera
 2) The main content for the file lecture5 was taken and used from the lecture video Taught by professor Gabriella Mosquera, mosquera@cs.dal.ca. 
 https://dal.brightspace.com/d2l/le/content/
 3)Resources Used
- The information for all the five books can be found on the same page for each book.
- They are as following:-
- https://www.goodreads.com/book/show/
+Whole lab2 file structure and code for the lab5. Also, there were many new functionalities were added, like sign in and number of visits, logout & welcome back message to the user.
 
- ** All the information regarding the books can be found from the link given above this links.
- Information including 
- Book name
- Authors
- ISBN-10
- Year of Publication
- Genre
- Price
+On Index.php the files structured were used as described in the lab5 instructions pdf file. And the index.php file was as light as possible.
+
+On clicking the Sign in button, it will take you to page1.php and now everypage will show welcome Username. But still the index will work normally and might not show username as this functionslity were added to page1.php
+
+*NOTE :- Logout button has used the class of Bootstrap and it will be only used when the user is logged in.
+Like Signout button is visible ONLY when user is signed in.
+
+Also, some parts of the code were taken from my previous submission namely:-
+Lecture 13:- https://web.cs.dal.ca/~patel29/csci2170/activity/lecture13/
+
 
 ### File Name
 
-lab2
+lab5
 
