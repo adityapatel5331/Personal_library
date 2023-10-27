@@ -5,9 +5,17 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username'])) {
     // Store username in a session variable
     $_SESSION['username'] = $_POST['username'];
+    // Set a flag to indicate form submission
+    $_SESSION['form_submitted'] = true;
     // Redirect to prevent form resubmission on page refresh
     header("Location: page1.php");
     exit();
+}
+
+// Check if the form was submitted in this or previous requests
+if (isset($_SESSION['form_submitted']) && $_SESSION['form_submitted'] === true) {
+    // If the form was submitted, unset the flag to avoid redirection on subsequent requests
+    unset($_SESSION['form_submitted']);
 }
 
 // Check if the username is set in the session

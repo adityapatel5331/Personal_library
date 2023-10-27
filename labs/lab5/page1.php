@@ -5,8 +5,8 @@
 <?php include './main/headers/header1.html'; ?>
 
 <body>
-
     <main>
+        <?php include 'logoutButton.php'; ?>
         <h1>Welcome to the politics section of my Book Store Website</h1>
         <?php include './main/cookies2.php'; ?>
     </main>
