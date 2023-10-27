@@ -27,3 +27,15 @@ main {
     text-align: center;
     margin-top: 20px;
 }
+
+.signin-form {
+    display: none;
+}
+
+.show-form .signin-form {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

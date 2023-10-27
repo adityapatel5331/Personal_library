@@ -1,11 +1,13 @@
+<?php include './main/cookies1.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include './main/headers/header1.html'; ?>
+<?php include './main/headers/header3.html'; ?>
 
 <body>
     <main>
         <h1>Welcome to The Section of Politics in my Bookstore</h1>
+        <?php include './main/cookies2.php'; ?>
     </main>
     <hr>
     <?php include './main/list3.php'; ?>
@@ -13,7 +15,8 @@
     <a href="biographies.php" class="btn btn-primary">Go to Biography Page</a>
     <a href="politics.php" class="btn btn-primary">Go to Politics Page</a>
 
-    <footer>
-        <p> &copy; Aditya Patel </p>
-    </footer>
 </body>
+
+<?php include './main/footers.html'; ?>
+
+</html>
