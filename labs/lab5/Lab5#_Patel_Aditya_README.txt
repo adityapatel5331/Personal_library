@@ -69,6 +69,7 @@ Like Signout button is visible ONLY when user is signed in.
 Also, some parts of the code were taken from my previous submission namely:-
 Lecture 13:- https://web.cs.dal.ca/~patel29/csci2170/activity/lecture13/
 
+All the parts of the labs are completed including the bonus ones.
 
 ### File Name
 
