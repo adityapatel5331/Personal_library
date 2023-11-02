@@ -1,0 +1,41 @@
+.book-container {
+    display: flex;
+    align-items: center;
+}
+
+.book-info {
+    flex: 1;
+}
+
+.book-image {
+    flex: 1;
+    margin-left: 20px;
+    /* Adjust the margin as needed */
+}
+
+.book-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signin-form {
+    display: none;
+}
+
+.show-form .signin-form {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

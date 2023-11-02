@@ -1,8 +1,8 @@
-# Lab 5
+# Lab 6
 
-* *Date Created*: 27 10 2023
-* *Last Modification Date*: 27 10 20239 
-* *Lab URL*: https://web.cs.dal.ca/~patel29/csci2170/lab5/
+* *Date Created*: 03 11 2023
+* *Last Modification Date*: 03 11 2023
+* *Lab URL*: https://web.cs.dal.ca/~patel29/csci2170/lab6/
 * *Git URL*: https://git.cs.dal.ca/patel29/csci2170.git
 
 ## Authors
