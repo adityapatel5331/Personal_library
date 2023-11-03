@@ -42,7 +42,11 @@ As git lab does not allows us to upload images.'
 
 --> Part A of the code was previously done for the lab 5 and the functionality remains the same.
 --> Part B was done and can be found under main/list(1,2,3).php
---> Part C 
+--> Part C is done under differen files and mainly the code is in cart.php
+--> Part D is also under the same files  except for a few as mentioned in above line.
+--> Part E can be found under checkout.php
+--> Part F is followed for the whole submission, each file is kept small as possible. And all the     other files and functions are being used in different files.
+--> Part G Each part of the BONUS  is also completed.
 
 ### And coding style tests
 
@@ -57,13 +61,10 @@ https://git.cs.dal.ca/patel29/csci2170
 
 1) Apart from that, I have used different websites for sake of learning. Also some code snippets has been used for completing the assignment.
 https://www.w3schools.com/php/php_datatypes.asp
-Gabriella Mosquera
-2) The main content for the file lecture5 was taken and used from the lecture video Taught by professor Gabriella Mosquera, mosquera@cs.dal.ca. 
-https://dal.brightspace.com/d2l/le/content/
-3)Resources Used
-Whole lab2 file structure and code for the lab5. Also, there were many new functionalities were added, like sign in and number of visits, logout & welcome back message to the user.
+2)Resources Used
+Whole lab2 file structure and code for the lab5. Also, there were many new functionalities were added, like sign in and number of visits, logout & welcome, cart oreder and total bill, welcome back message to the user.
 
-On Index.php the files structured were used as described in the lab5 instructions pdf file. And the index.php file was as light as possible.
+On Index.php the files structured were used as described in the lab6 instructions pdf file. And the index.php file was as light as possible.
 
 On clicking the Sign in button, it will take you to page1.php and now everypage will show welcome Username. But still the index will work normally and might not show username as this functionslity were added to page1.php
 
@@ -72,11 +73,11 @@ Like Signout button is visible ONLY when user is signed in.
 
 Also, some parts of the code were taken from my previous submission namely:-
 Lecture 13:- https://web.cs.dal.ca/~patel29/csci2170/activity/lecture13/
-Lab 5:- https://web.cs.dal.ca/~patel29/csci2170/lab6/
+Lab 6:- https://web.cs.dal.ca/~patel29/csci2170/lab6/
 
 All the parts of the labs are completed including the bonus ones.
 
 ### File Name
 
-lab5
+lab6
 
