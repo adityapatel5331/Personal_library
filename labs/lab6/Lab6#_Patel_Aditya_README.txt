@@ -24,12 +24,12 @@ See the following section for detailed step-by-step instructions on how to insta
 
 ### Installing
 
-1) This is the readme file for lab 5 submission.
-As directed this txt file contains all the necessary documentations for Lab 5. Some contents and ideas , about the use of elements and different tags are taken from lab2 folder which was used for previous submission of lab2 for CSCI2170. 
+1) This is the readme file for lab 6 submission.
+As directed this txt file contains all the necessary documentations for Lab 6. Some contents and ideas , about the use of elements and different tags are taken from lab2 folder which was used for previous submission of lab2 and lab5 for CSCI2170. 
 
 ## Running the tests
 
-testing can be done via visiting the website :- https://web.cs.dal.ca/~patel29/csci2170/lab5/
+testing can be done via visiting the website :- https://web.cs.dal.ca/~patel29/csci2170/lab6/
 also for verifying the work you can visit :- https://validator.w3.org/
 
 ### Break down into end to end tests
@@ -38,7 +38,11 @@ I have used differen information about the top 5 best selling books from nytimes
 https://www.nytimes.com/books/best-sellers/
 
 Regarding the file that have images for this lab, I have taken permission from professor in-person for not uploading it of the git lab. 
-As git lab does not allows us to upload images.
+As git lab does not allows us to upload images.'
+
+--> Part A of the code was previously done for the lab 5 and the functionality remains the same.
+--> Part B was done and can be found under main/list(1,2,3).php
+--> Part C 
 
 ### And coding style tests
 
@@ -68,6 +72,7 @@ Like Signout button is visible ONLY when user is signed in.
 
 Also, some parts of the code were taken from my previous submission namely:-
 Lecture 13:- https://web.cs.dal.ca/~patel29/csci2170/activity/lecture13/
+Lab 5:- https://web.cs.dal.ca/~patel29/csci2170/lab6/
 
 All the parts of the labs are completed including the bonus ones.
 
