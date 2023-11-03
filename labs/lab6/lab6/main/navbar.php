@@ -7,7 +7,7 @@
             <button type="submit" class="btn btn-primary">Sign-in</button>
         </form>
     </div>
-    <a href="cart.php" class="btn btn-primary">Cart (
+    <a href="shoppingcart.php" class="btn btn-primary">Shopping Cart (
         <?php echo isset($_SESSION['cart_count']) ? $_SESSION['cart_count'] : 0; ?>)
     </a>
 </div>

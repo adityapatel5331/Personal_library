@@ -1,53 +1,45 @@
 <?php
 session_start();
 include('./main/list1.php');
-// Check if the form is submitted and the book is selected
-// if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['buy_book'])) {
-//     $books = $_POST['books'];
 
-//     // Initialize cart count
-//     $cartCount = 0;
-
-//     // Check if cart is already set in session
-//     if (isset($_SESSION['cart']) && is_array($_SESSION['cart'])) {
-//         // Add selected books to the cart
-//         foreach ($books as $book) {
-//             $_SESSION['cart'][] = $book;
-//             $cartCount++;
-//         }
-//     } else {
-//         // Create a new cart and add selected books
-//         $_SESSION['cart'] = $books;
-//         $cartCount = count($books);
-//     }
-
-//     // Update cart count in session
-//     $_SESSION['cart_count'] = $cartCount;
-
-//     // Redirect back to the previous page
-//     header("Location: {$_SERVER['HTTP_REFERER']}");
-//     exit();
-// } 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['buy_book'])) {
+
     //     $books = $_POST['books'];
     if (!isset($_SESSION['cart'])) {
         $_SESSION['cart'] = [];
         $_SESSION['cart_count'] = 0;
     }
-    // foreach ($books as $key => $book){
-    //     $_SESSION['cart'][] = $book;
-    // }
-    $bookIndex = $_POST['book_index'];
+    foreach ($books as $key => $book) {
+        if ($book['ISBN-10'] == $_POST['book_name']) {
+            $bookIndex = $key;
+            break;
+        }
+    }
     $book = $books[$bookIndex];
+    $book['quantity'] = $_POST['quantity'];
+    if (isset($_SESSION['cart'][$bookIndex])) {
+        $_SESSION['cart'][$bookIndex]['quantity'] += $book['quantity'];
+    } else {
+        $_SESSION['cart'][$bookIndex] = $book;
+    }
 
-    $_SESSION['cart'][] = $book;
-    $_SESSION['cart_count']++;
+    $_SESSION['cart_count'] += $book['quantity'];
+
+    // set session variable for total price
+    if (!isset($_SESSION['total_price'])) {
+        $_SESSION['total_price'] = 0;
+    }
+
+    $book['Price'] =   substr($book['Price'], 1);
+    $book['quantity'] = $book['quantity'];
+
+    $_SESSION['total_price'] += $book['Price'] * $book['quantity'];
+
+
     header("Location: {$_SERVER['HTTP_REFERER']}");
     exit();
-}
-else {
+} else {
     // If no book is selected, redirect to index.php
     header("Location: index.php");
     exit();
 }
-?>

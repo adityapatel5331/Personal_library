@@ -1,31 +1,39 @@
-<?php if (!isset($_SESSION['username'])): ?>
-    <div id="signin-form">
-        <form method="post" action="page1.php">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-<?php endif; ?>
-
 <?php
+session_start();
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username'])) {
+    // Store username in a session variable
+    $_SESSION['username'] = $_POST['username'];
+    // Set a flag to indicate form submission
+    $_SESSION['form_submitted'] = true;
+    // Redirect to prevent form resubmission on page refresh
+    header("Location: page1.php");
+    exit();
+}
+
+// Check if the form was submitted in this or previous requests
+if (isset($_SESSION['form_submitted']) && $_SESSION['form_submitted'] === true) {
+    // If the form was submitted, unset the flag to avoid redirection on subsequent requests
+    unset($_SESSION['form_submitted']);
+}
+
 // Check if the username is set in the session
 if (isset($_SESSION['username'])) {
-    echo "<p>Welcome, {$_SESSION['username']}!</p>";
+    $username = $_SESSION['username'];
+} else {
+    $username = null;
 }
 
-// Print the number of visits
-echo "<p>Number of Visits: $visits</p>";
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['buy_book'])) {
-    if (!isset($_SESSION['cart'])) {
-        $_SESSION['cart'] = [];
-        $_SESSION['cart_count'] = 0;
-    }
-
-    $bookIndex = $_POST['book_index'];
-    $book = $books[$bookIndex];
-
-    $_SESSION['cart'][] = $book;
-    $_SESSION['cart_count']++;
+// Increment visit count or initialize to 1
+if (isset($_COOKIE['visits'])) {
+    $visits = $_COOKIE['visits'] + 1;
+} else {
+    $visits = 1;
 }
-?>
+
+// Set the 'visits' cookie
+setcookie('visits', $visits, time() + 31536000, '/');
+
+// Array of books
+
+include './main/list2.php';

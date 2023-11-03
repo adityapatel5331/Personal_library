@@ -1,6 +1,5 @@
 <?php
 session_start();
-echo "<script>console.log('Debug Objects: " . $_SESSION['cart_count'] . "' );</script>";
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username'])) {
     // Store username in a session variable
@@ -38,20 +37,3 @@ setcookie('visits', $visits, time() + 31536000, '/');
 // Array of books
 
 include './main/list1.php';
-
-// // Handle adding items to cart
-// if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['buy_book'])) {
-//     if (!isset($_SESSION['cart'])) {
-//         $_SESSION['cart'] = [];
-//         $_SESSION['cart_count'] = 0;
-//     }
-
-//     $bookIndex = $_POST['book_index'];
-//     $book = $books[$bookIndex];
-
-//     $_SESSION['cart'][] = $book;
-//     $_SESSION['cart_count']++;
-
-// }
-
-?>

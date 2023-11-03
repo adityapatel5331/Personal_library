@@ -11,7 +11,7 @@ include("./main/cookies1.php");
     <?php include './main/navbar.php'; ?>
     <main>
         <h1>Welcome to the politics section of my Book Store Website</h1>
-        <?php if (isset($_SESSION['form_submitted']) && !isset($_SESSION['username'])): ?>
+        <?php if (isset($_SESSION['form_submitted']) && !isset($_SESSION['username'])) : ?>
             <div id="signin-form">
                 <form method="post" action="page1.php">
                     <label for="username">Username:</label>
@@ -32,8 +32,9 @@ include("./main/cookies1.php");
         ?>
     </main>
     <hr>
-    <form method="post" action="addtocart.php">
-        <?php foreach ($books as $key => $book): ?>
+    <?php foreach ($books as $key => $book) : ?>
+        <form method="post" action="addtocart.php">
+
             <div class="book-container">
                 <div class="book-info">
                     <strong>Book Name:</strong>
@@ -48,17 +49,22 @@ include("./main/cookies1.php");
                     <?php echo $book["Genre"]; ?><br>
                     <strong>Price:</strong>
                     <?php echo $book["Price"]; ?><br>
-                    <input type="hidden" name="book_index" value="<?php echo $key; ?>">
-                    <button type="submit" class="btn btn-info" name="buy_book">Add to Cart</button>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" value="1" min="1" max="10">
+                    <input type="hidden" name="book_name" value="<?php echo $book['ISBN-10']; ?>">
+                    <input type="hidden" name="book_type" value="index">
+                    <button type="submit" class="btn btn-info" name="buy_book">Buy</button>
                 </div>
                 <div class="book-image">
                     <img src="./images/<?php echo $book['Image']; ?>" alt="Book Cover" width="200" height="300"><br>
                 </div>
             </div>
-            </form>
-            <hr>
-        <?php endforeach; ?>
-    
+        </form>
+
+        <hr>
+    <?php endforeach; ?>
+
     <a href="index.php" class="btn btn-primary">Go to Index Page</a>
     <a href="biographies.php" class="btn btn-primary">Go to Biography Page</a>
     <a href="politics.php" class="btn btn-primary">Go to Politics Page</a>
