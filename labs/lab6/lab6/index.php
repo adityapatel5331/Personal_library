@@ -48,17 +48,17 @@ include("./main/cookies1.php");
                     <?php echo $book["Genre"]; ?><br>
                     <strong>Price:</strong>
                     <?php echo $book["Price"]; ?><br>
-                    <input type="hidden" name="book_index" value="<?php echo $book['ISBN-10']; ?>">
+                    <input type="hidden" name="book_index" value="<?php echo $key; ?>">
                     <button type="submit" class="btn btn-info" name="buy_book">Add to Cart</button>
                 </div>
                 <div class="book-image">
                     <img src="./images/<?php echo $book['Image']; ?>" alt="Book Cover" width="200" height="300"><br>
                 </div>
             </div>
-
+            </form>
             <hr>
         <?php endforeach; ?>
-    </form>
+    
     <a href="index.php" class="btn btn-primary">Go to Index Page</a>
     <a href="biographies.php" class="btn btn-primary">Go to Biography Page</a>
     <a href="politics.php" class="btn btn-primary">Go to Politics Page</a>
