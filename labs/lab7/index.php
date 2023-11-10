@@ -1,7 +1,7 @@
 <?php
 $hostname = "db.cs.dal.ca";
 $username = "patel29";
-$password = "ghYJAfYJ9bsvTQpL28A4Qr9VA";
+$password = "CN7eRK9qzjBCsqhUUE7AQhoiX";
 $database = "patel29";
 
 try {
@@ -14,3 +14,6 @@ try {
 }
 
 ?>
+<!-- <?php
+//phpinfo();
+?> -->
