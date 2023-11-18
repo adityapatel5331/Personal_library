@@ -34,6 +34,7 @@ No Prerequisites are allowed to view the project
 
 on going to the git website, and timberlea you can see the project and manually enter the inputs to validate the data.
 
+All the updated functionality has been checked to verify that it is working or not on the localhost and then uploaded.
 
 ## Built With
 
