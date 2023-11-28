@@ -2,9 +2,10 @@
 
 (Lecture 20 Activity Re-submission)
 
-* Date Created: 18 11 2023
-* Last Modification Date: 04 10 2023
+* Date Created: 04 10 2023
+* Last Modification Date: 18 11 2023
 * Lab URL: https://web.cs.dal.ca/~patel29/csci2170/lab3/
+* Activity URL: https://web.cs.dal.ca/~patel29/csci2170/activity/lecture20/
 * Git URL: https://git.cs.dal.ca/patel29/csci2170/-/tree/main/labs/lab3
 
 ## Authors
