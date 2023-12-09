@@ -19,7 +19,8 @@
             <form method="post" action="index.php">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" placeholder="Confirm updated password" required>
+                <!-- this will update the passsword in DB. -->
                 <button type="submit" class="btn btn-primary">Sign-in</button>
             </form>
             <?php
@@ -46,7 +47,7 @@
                     header('Location: index.php');
                     exit;
                 } else {
-                    echo '<span class="error-message">Invalid username or password.</span>';
+                    // echo '<span class="error-message">Invalid username or password.</span>';
                 }
             }
             ?>

@@ -10,8 +10,6 @@ if (!isset($_SESSION['userInfo'])) {
 
 $userInfo = $_SESSION['userInfo'];
 
-
-
 ?>
 
 <!DOCTYPE html>
